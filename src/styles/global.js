@@ -10,7 +10,7 @@ export default createGlobalStyle`
     background: #0F0020;
     color: #E8E6E2;
     font-family: 'Roboto', sans-serif;
-    overflow-x: none;
+    overflow-x: hidden;
   }
   
   a {
