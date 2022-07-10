@@ -4,12 +4,12 @@ export const Wrapper = styled.div`
   width: 100%;
   height: 100vh;
 
+  
+  background: linear-gradient(137.79deg, #1F0548 -19.84%, #0D021E 76.32%);
+
   display: flex;
   align-items: center;
   justify-content: center;
-
-  position: relative;
-  overflow-x: hidden;
 
   > div {
     display: flex;
@@ -98,10 +98,10 @@ export const Wrapper = styled.div`
   @keyframes ArrowsEffect {
     0%,
     100% {
-      bottom: 20px;
+      bottom: 40px;
     }
     50%{
-      bottom: 35px;
+      bottom: 65px;
     }
   }
 `;
