@@ -7,10 +7,18 @@ import Github from "../../assets/github.svg";
 import Linkedin from "../../assets/linkedin.svg";
 import Arrows from "../../assets/arrows-down.svg";
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 export default function Home() {
+
+  AOS.init({
+    duration: 1200
+  });
+
   return (
     <S.Wrapper>
-      <div>
+      <div data-aos="fade-down">
         <img src={Icon} alt="Icon" />
         <div>
           <h1>Olá, sou Lucas Lima! :D</h1>
@@ -18,7 +26,7 @@ export default function Home() {
         </div>
       </div>
       <img src={Bus} alt="Bus" />
-      <ul>
+      <ul data-aos="fade-right">
         <li>
           <img src={Linkedin} alt="Linkedin" />
         </li>

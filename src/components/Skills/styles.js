@@ -15,22 +15,27 @@ export const Wrapper = styled.div`
   }
 
   > div {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
     margin: 5.2rem 0;
 
-    .oi{
-      display: none;
+    > img {
+      width: 350px;
     }
 
-    > img {
-      width: 500px;
+    @media (max-width: 840px) {
+      display: flex;
+      justify-content: center;
+      > img {
+        display: none;
+      }
     }
   }
+
   ul {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+    padding: 0 25px;
 
     li {
       display: flex;
@@ -42,10 +47,16 @@ export const Wrapper = styled.div`
       img {
         width: 2.8rem;
       }
+
       transition: transform ease-out 0.1s;
+
       &:hover {
         transform: scale(1.1);
       }
+    }
+
+    @media (max-width: 600px){
+      justify-content: space-between;
     }
   }
 `;

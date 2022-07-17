@@ -1,5 +1,8 @@
 import * as S from "./styles";
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 import Css from "../../assets/css.svg";
 import Html from "../../assets/html.svg";
 import Javascript from "../../assets/js.svg";
@@ -8,14 +11,18 @@ import Reactjs from "../../assets/react.svg";
 import Sass from "../../assets/sass.svg";
 import Typescript from "../../assets/typescript.svg";
 import Github from "../../assets/github.svg";
-import Programmer from '../../assets/developer.svg'
+import Programmer from '../../assets/programmer.png'
+
+AOS.init({
+  duration: 800
+});
 
 export default function Skills() {
   return (
     <S.Wrapper>
-      <h2>Habilidades em...</h2>
+      <h2 data-aos="fade-down">Habilidades em...</h2>
       <div>
-        <ul>
+        <ul data-aos="fade-down">
           <li>
             <img src={Html} alt="Html" />
             <p>HTML 5</p>
@@ -53,7 +60,7 @@ export default function Skills() {
             <p>Git e Github</p>
           </li>
         </ul>
-        <img src={Programmer} alt="Developer" />
+        <img src={Programmer} alt="Developer" data-aos="fade-down" />
       </div>
     </S.Wrapper>
   );

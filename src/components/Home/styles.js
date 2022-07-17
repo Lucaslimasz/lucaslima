@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
   width: 100%;
-  height: 100vh;
+  height: 90vh;
 
   
   background: linear-gradient(137.79deg, #1F0548 -19.84%, #0D021E 76.32%);
@@ -47,7 +47,7 @@ export const Wrapper = styled.div`
     position: absolute;
     display: block;
     left: 80%;
-    bottom: -45px;
+    bottom: 60px;
     width: 400px;
   }
 
@@ -78,7 +78,7 @@ export const Wrapper = styled.div`
   }
   @keyframes blink {
     from {
-      border-color: black;
+      border-color: transparent;
     }
     to {
       border-color: transparent;
@@ -98,10 +98,10 @@ export const Wrapper = styled.div`
   @keyframes ArrowsEffect {
     0%,
     100% {
-      bottom: 40px;
+      bottom: 120px;
     }
     50%{
-      bottom: 65px;
+      bottom: 155px;
     }
   }
 `;
